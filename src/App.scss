@@ -1,0 +1,82 @@
+$accent-color-200: #FF4081;
+
+$primary-color: #0277BD;
+
+.wrapper {
+  position: relative;
+  height: 100vh;
+}
+
+.controls {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.5rem;
+  z-index: 2;
+
+  .btn {
+    cursor: pointer;
+  }
+}
+
+.tl-progress {
+  &-count {
+    display: inline-block;
+    border-radius: 0;
+    border-bottom: solid 0.2rem rgba(0, 0, 0, 0.54);
+    margin-left: 0.5rem;
+    text-align: center;
+    width: 4.25rem;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+}
+
+.tl-progressbar {
+  // border: solid 1px #f00;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 2rem;
+  margin: 0 1.25rem 0.75rem 1.25rem;
+
+  .indicator {
+    // border: solid 2px $primary-color;
+    background: $primary-color;
+    border-radius: 0.2rem;
+    position: absolute;
+    top: 50%;
+    width: 0.5rem;
+    height: 2rem;
+    transform: translateY(-50%);
+  }
+
+  hr {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin: 0;
+    border-color: $primary-color;
+  }
+}
+
+.box {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  border: solid 0.2rem $primary-color;
+  border-radius: 0.4rem;
+}
+
+.smallbox {
+  background: $primary-color;
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}

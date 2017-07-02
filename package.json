@@ -1,0 +1,35 @@
+{
+  "name": "gsap-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.6",
+    "eslint": "3.19",
+    "eslint-plugin-react": "^7.1.0",
+    "gsap": "^1.19.1",
+    "karet": "^1.2.2",
+    "karet.util": "^0.13.0",
+    "kefir": "^3.7.2",
+    "partial.lenses": "^11.9.0",
+    "ramda": "^0.24.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "sanctuary": "^0.13.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-plugin-react": "^7.1.0",
+    "node-sass-chokidar": "^0.0.3",
+    "npm-run-all": "^4.0.2",
+    "react-scripts": "1.0.7"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
