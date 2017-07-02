@@ -12,33 +12,29 @@ $primary-color: #0277BD;
   }
 }
 
-section {
-  &.description {
-    background-color: $primary-color;
+section.animation-canvas {
+  flex: 1;
+  display: relative;
+  overflow: hidden;
+}
+
+aside.description {
+  background-color: $primary-color;
+  color: #fff;
+  width: 20rem;
+  padding: 1rem;
+  border-right: solid 0.2rem rgba(0, 0, 0, 0.12);
+
+  a {
     color: #fff;
-    width: 20rem;
-    padding: 1rem;
-    border-right: solid 0.2rem rgba(0, 0, 0, 0.12);
+    border-bottom: solid 0.2rem #fff;
 
-    a {
-      color: #fff;
-      border-bottom: solid 0.2rem #fff;
-
-      &:hover {
-        text-decoration: none;
-        border-bottom: solid 0.2rem transparent;
-      }
+    &:hover {
+      text-decoration: none;
+      border-bottom: solid 0.2rem transparent;
     }
   }
 
-  &.animation-canvas {
-    flex: 1;
-    display: relative;
-    overflow: hidden;
-  }
-}
-
-section.description {
   h2 {
     font-size: 1.4rem;
     padding-bottom: 0.75rem;
