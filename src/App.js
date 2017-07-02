@@ -38,8 +38,16 @@ const progress$ =
 
 const App = ({ el = U.variable() }) =>
   <div className="app">
-    <div className="wrapper">
-      <div className="box">
+    <section className="description">
+      <h2>Calmm and GreenSock</h2>
+
+      <p>
+        Wrapper for the <a href="https://greensock.com/">GreenSock animation platform</a> to make it possible to use the GreenSock libraries in <a href="https://github.com/calmm-js">Calmm</a> projects.
+      </p>
+    </section>
+
+    <section className="animation-canvas">
+      <div className="wrapper">
         <div className="smallbox"
              ref={U.refTo(el)} />
         {U.sink(applyAnimation(el))}
@@ -58,7 +66,7 @@ const App = ({ el = U.variable() }) =>
           <hr />
         </div>
       </div>
-    </div>
+    </section>
   </div>;
 
 export default App;

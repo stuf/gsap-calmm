@@ -1,4 +1,4 @@
-$font-family-sans-serif: 'Quicksand', sans-serif;
+$font-family-sans-serif: 'Questrial', sans-serif;
 $font-family-monospace: 'PT Mono', 'Source Code Pro', Menlo, monospace;
 
 @import 'bootstrap/scss/bootstrap';
@@ -15,5 +15,5 @@ code {
 body {
   margin: 0;
   padding: 0;
-  font-family: $font-family-sans-serif;
+  font-family: $font-family-monospace;
 }
