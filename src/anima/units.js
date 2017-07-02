@@ -16,4 +16,6 @@ const constructUnitFns =
 
 const unitFns = constructUnitFns(units);
 
+Object.assign(window, { unitFns });
+
 export default unitFns;
